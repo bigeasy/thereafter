@@ -1,0 +1,34 @@
+{
+    "name":                 "thereafter",
+    "version":              "1.4.2",
+    "description":
+
+        "Create a cancelable series of error-first callback function invocations.",
+
+    "keywords":
+    [
+                            "queue", "events", "callback", "control", "flow",
+                            "cadence"
+    ],
+    "author":               "Alan Gutierrez <alan@prettyrobots.com>",
+    "homepage":             "https://github.com/bigeasy/thereafter",
+    "bugs":                 "https://github.com/bigeasy/thereafter/issues",
+    "license":              "MIT",
+    "repository":
+    {
+                            "type": "git",
+                            "url": "http://github.com/bigeasy/thereafter.git"
+    },
+    "dependencies":
+    {
+    },
+    "devDependencies":
+    {
+                            "proof":                        "3.0.x"
+    },
+    "main":                 "thereafter",
+    "scripts":
+    {
+                            "test": "proof platform win32 && proof test */*.t.js || t/test"
+    }
+}

@@ -1,0 +1,19 @@
+Thereafter
+
+Create a cancelable series of error-first callback function invocations.
+
+    Discussion:     https://github.com/bigeasy/thereafter/issues/1
+
+    Documentation:  https://bigeasy.github.io/thereafter
+    Source:         https://github.com/bigeasy/thereafter
+    Issues:         https://github.com/bigeasy/thereafter/issues
+    CI:             https://travis-ci.org/bigeasy/thereafter
+    Coverage:       https://coveralls.io/github/bigeasy/thereafter
+
+    Install:        `npm install thereafter`
+
+    License:        MIT
+
+To learn everything you want to know about Thereafter start here:
+
+    http://bigeasy.github.io/thereafter
