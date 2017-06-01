@@ -1,4 +1,4 @@
-require('proof')(2, prove)
+require('proof')(3, prove)
 
 function prove (assert, callback) {
     var Thereafter = require('..')
@@ -10,7 +10,7 @@ function prove (assert, callback) {
             callback(null, 1)
         })
     }, function (error, result) {
-        assert(result, 1, 'finished')
+        assert(result, 1, 'calledback')
         callback()
     })
 
@@ -22,5 +22,9 @@ function prove (assert, callback) {
 
     thereafter.run(function (ready, value, callback)  {
         throw new Error
+    })
+
+    thereafter.ready.wait(function () {
+        assert(true, 'finished')
     })
 }

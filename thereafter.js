@@ -24,7 +24,9 @@ Thereafter.prototype.run = function () {
     var ready = this.ready = new Signal
     var thereafter = this
     previous.wait(function () {
-        if (!thereafter.canceled) {
+        if (thereafter.canceled) {
+            ready.unlatch()
+        } else {
             operation.apply(null, [ ready ].concat(vargs))
         }
     })
