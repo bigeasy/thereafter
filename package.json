@@ -21,6 +21,9 @@
     },
     "dependencies":
     {
+                            "cadence":                      "1.0.x",
+                            "operation":                    "1.4.x",
+                            "signal":                       "0.10.x"
     },
     "devDependencies":
     {
