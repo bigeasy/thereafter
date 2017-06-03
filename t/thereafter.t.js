@@ -11,13 +11,13 @@ function prove (assert, callback) {
         })
     }, function (error, result) {
         assert(result, 1, 'calledback')
+        thereafter.cancel()
         callback()
     })
 
     thereafter.run(function (ready, value)  {
         thereafter.cancel()
         assert(value, 1, 'parameters')
-        ready.unlatch()
     }, 1)
 
     thereafter.run(function (ready, value, callback)  {
