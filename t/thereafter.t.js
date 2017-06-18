@@ -25,6 +25,7 @@ function prove (assert, callback) {
     })
 
     thereafter.ready.wait(function () {
+        thereafter.run(function () { throw new Error })
         assert(true, 'finished')
     })
 }

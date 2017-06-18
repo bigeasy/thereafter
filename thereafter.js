@@ -25,7 +25,9 @@ Thereafter.prototype.cancel = function () {
 }
 
 Thereafter.prototype.run = function () {
-    assert(!this.canceled)
+    if (this.canceled) {
+        return
+    }
 
     var thereafter = this
 
