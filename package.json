@@ -1,6 +1,6 @@
 {
     "name":                 "thereafter",
-    "version":              "0.0.4",
+    "version":              "0.1.0",
     "description":
 
         "Create a cancelable series of error-first callback function invocations.",
