@@ -23,7 +23,7 @@
     {
                             "cadence":                      "1.0.x",
                             "operation":                    "1.4.x",
-                            "signal":                       "1.10.x"
+                            "signal":                       "3.0.x"
     },
     "devDependencies":
     {
